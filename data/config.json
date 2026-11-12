@@ -1,0 +1,979 @@
+{
+    "version": 1,
+    "updatedAt": "2026-11-11T07:35:24+00:00",
+    "adminAuth": {
+        "username": "admin",
+        "passwordHash": "micho2026"
+    },
+    "schedule": {
+        "mode": "auto",
+        "openTime": "18:30",
+        "closeTime": "22:30",
+        "openDays": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+        ],
+        "hoursLabel": "🕒 Lun - Sáb: 6:30 PM a 10:30 PM",
+        "customClosedTitle": "Cocina Cerrada",
+        "customClosedMessage": "",
+        "estimatedTimeMins": 20
+    },
+    "sideOptions": {
+        "ensaladaAvailable": true,
+        "papaHiloAvailable": true
+    },
+    "cremasRule": {
+        "maxFree": 9,
+        "extraPrice": 0.5
+    },
+    "cremas": [
+        {
+            "id": "may",
+            "name": "MAYONESA",
+            "label": "Mayonesa",
+            "available": true
+        },
+        {
+            "id": "ket",
+            "name": "KETCHUT",
+            "label": "Kétchut",
+            "available": true
+        },
+        {
+            "id": "mostaza",
+            "name": "MOSTAZA",
+            "label": "Mostaza",
+            "available": true
+        },
+        {
+            "id": "golf",
+            "name": "GOLF",
+            "label": "Salsa Golf",
+            "available": true
+        },
+        {
+            "id": "tartara",
+            "name": "TÁRTARA",
+            "label": "Tártara",
+            "available": true
+        },
+        {
+            "id": "aji",
+            "name": "AJÍ",
+            "label": "Ají",
+            "available": true
+        },
+        {
+            "id": "aceituna",
+            "name": "ACEITUNA",
+            "label": "Aceituna",
+            "available": true
+        }
+    ],
+    "extras": [
+        {
+            "id": "queso",
+            "name": "Queso",
+            "price": 1.5,
+            "variant_id": "9a66356e-1dda-43bf-b4ac-dd3fd4e04064",
+            "available": true,
+            "item_id": "b0b82d56-cabd-490b-91b5-033e289769bb",
+            "sku": "10033"
+        },
+        {
+            "id": "jamon",
+            "name": "Jamón",
+            "price": 1.5,
+            "variant_id": "3336e1cc-3dd8-4c73-862d-833194e7a006",
+            "available": true,
+            "item_id": "8c9fdebb-0c83-42ae-a539-501c05abcfa8",
+            "sku": "10034"
+        },
+        {
+            "id": "huevo",
+            "name": "Huevo",
+            "price": 2,
+            "variant_id": "d2eba247-bc3d-4dde-bd82-5b0939caab7b",
+            "available": true,
+            "item_id": "97d1af00-3c2c-440f-8db8-d2bc92751f1c",
+            "sku": "10036"
+        },
+        {
+            "id": "tocino",
+            "name": "Tocino",
+            "price": 2,
+            "variant_id": "2bedb4bb-8709-4b3d-9eca-3ef50bb5cccb",
+            "available": true,
+            "item_id": "ac3628aa-5732-4803-8e67-88927526a568",
+            "sku": "10035"
+        }
+    ],
+    "masterStockGroups": [
+        {
+            "id": "grp_promociones",
+            "name": "Promociones (Alas)",
+            "masterVariantId": "df1e6c91-9f19-4dbd-a065-b4b021fc4843",
+            "manualOutOfStock": false,
+            "variants": [
+                "df1e6c91-9f19-4dbd-a065-b4b021fc4843"
+            ]
+        },
+        {
+            "id": "grp_hamburguesas",
+            "name": "Hamburguesas (Carne)",
+            "masterVariantId": "6d767227-33a4-4738-9bad-426be19362fe",
+            "manualOutOfStock": false,
+            "variants": [
+                "6d767227-33a4-4738-9bad-426be19362fe",
+                "8bf81c7e-7d00-48d3-b9e9-cda9f9d72c39",
+                "6443424f-c859-44b2-81df-14b2259a1f5e",
+                "4e4fef97-e474-4399-bd9c-a3018cc5f08e",
+                "ea59f87e-7011-4a3e-a7a9-44382e4a0e4c",
+                "b34af2ce-02d8-426a-ab23-44a9c4b1f845"
+            ]
+        },
+        {
+            "id": "grp_pollo",
+            "name": "Pollo Deshilachado",
+            "masterVariantId": "c577b91a-a10f-4e1e-9911-a1f73b9f6c97",
+            "manualOutOfStock": false,
+            "variants": [
+                "c577b91a-a10f-4e1e-9911-a1f73b9f6c97",
+                "e4d1fbbf-1503-4317-94cb-acc75b1c913a",
+                "060095b1-6642-4cb1-ae5a-2d2cd7c96334",
+                "6906ccd6-cc74-4042-8601-e646c1129131",
+                "f1f36672-bc7c-41de-9961-ddd068380e4d",
+                "9f238682-be0f-4853-91be-2824471e0ab0",
+                "1dcb00a3-0b10-4384-9c2a-df9ab86cbca1",
+                "2ce4b601-7b87-4eb3-9a66-5a6ebeb33f33"
+            ]
+        },
+        {
+            "id": "grp_filetes",
+            "name": "Filetes de Pollo",
+            "masterVariantId": "08d0e755-36f3-4253-b262-56430ea37cad",
+            "manualOutOfStock": false,
+            "variants": [
+                "08d0e755-36f3-4253-b262-56430ea37cad",
+                "8e2a954c-1719-4be3-99b2-f220b80f40a8",
+                "2bfa628d-bdfb-468b-aafa-ac351846b7de",
+                "f9fad568-98bf-4dd9-a57d-b5d3f5f86ed4",
+                "0e2ef7ed-82a0-43ad-a8d7-4e0d99ee9eea"
+            ]
+        },
+        {
+            "id": "grp_crispy",
+            "name": "Pollo Crispy",
+            "masterVariantId": "5262de55-d870-46c2-aad9-25a7a096d8a0",
+            "manualOutOfStock": false,
+            "variants": [
+                "5262de55-d870-46c2-aad9-25a7a096d8a0",
+                "57bf1904-69f2-427a-8731-afe078274a6d",
+                "d94b34ba-f604-44b9-b76c-08286adaff5e",
+                "54ca71a0-bb6d-44de-b3a3-af21b46924c3",
+                "60bc53aa-36cd-4650-9707-c082244fbf7c"
+            ]
+        },
+        {
+            "id": "grp_chorizos",
+            "name": "Chorizos",
+            "masterVariantId": "8fdde459-5909-49a4-a2c9-eacbec3efa18",
+            "manualOutOfStock": false,
+            "variants": [
+                "8fdde459-5909-49a4-a2c9-eacbec3efa18",
+                "9be1375d-d1ca-4ada-ab6d-55218b8a792d",
+                "93e6270e-8acc-49f9-8c0f-3fee2faa4c70",
+                "c084ac1e-f45b-4c6d-8173-1527d39ca3f5",
+                "6059ac60-e268-4809-9060-4253c62c24db"
+            ]
+        },
+        {
+            "id": "grp_pecho_broaster",
+            "name": "Pecho Broaster",
+            "masterVariantId": "ef9fc0a8-c3e4-4b0f-8ad3-d15d14a5b526",
+            "manualOutOfStock": false,
+            "variants": [
+                "ef9fc0a8-c3e4-4b0f-8ad3-d15d14a5b526",
+                "47fd3400-d49d-49fa-9f9b-b749a89414bd"
+            ]
+        },
+        {
+            "id": "grp_encuentro_broaster",
+            "name": "Encuentro Broaster",
+            "masterVariantId": "7433770a-524e-46b1-b07d-1c6f4c2a7eb1",
+            "manualOutOfStock": false,
+            "variants": [
+                "7433770a-524e-46b1-b07d-1c6f4c2a7eb1"
+            ]
+        },
+        {
+            "id": "grp_ala_broaster",
+            "name": "Ala Broaster",
+            "masterVariantId": "8056dee7-40f6-4e43-bce8-a3344060997c",
+            "manualOutOfStock": false,
+            "variants": [
+                "8056dee7-40f6-4e43-bce8-a3344060997c",
+                "2177ce33-0135-45b7-9a43-60167b803e1f"
+            ]
+        },
+        {
+            "id": "grp_muzlo_broaster",
+            "name": "Muzlo Broaster",
+            "masterVariantId": "7ff8ac6a-2ae7-4989-8a6e-5e535ca1fcb8",
+            "manualOutOfStock": false,
+            "variants": [
+                "7ff8ac6a-2ae7-4989-8a6e-5e535ca1fcb8"
+            ]
+        }
+    ],
+    "categories": [
+        {
+            "id": "hamburguesas",
+            "name": "Hamburguesas",
+            "icon": "🍔",
+            "active": true,
+            "items": [
+                {
+                    "id": "h1",
+                    "variant_id": "6d767227-33a4-4738-9bad-426be19362fe",
+                    "name": "Hamburguesa clásica",
+                    "desc": "Carne artesanal a la plancha + papas fritas y\/o hilo + todas las cremas",
+                    "price": 12,
+                    "badge": "Popular",
+                    "active": true,
+                    "manualOutOfStock": false,
+                    "allowsPotatoChoice": true,
+                    "isBeverage": false,
+                    "item_id": "8d26ea32-8dae-4605-8c94-39e65fac883d",
+                    "sku": "1"
+                },
+                {
+                    "id": "h2",
+                    "variant_id": "8bf81c7e-7d00-48d3-b9e9-cda9f9d72c39",
+                    "name": "Hamburguesa especial",
+                    "desc": "Carne artesanal + jamón inglés + queso derretido + papas fritas",
+                    "price": 13,
+                    "badge": "",
+                    "active": true,
+                    "manualOutOfStock": false,
+                    "allowsPotatoChoice": true,
+                    "isBeverage": false,
+                    "item_id": "7aca8589-3c9d-4a1d-a667-211f173c0086",
+                    "sku": "10000"
+                },
+                {
+                    "id": "h3",
+                    "variant_id": "6443424f-c859-44b2-81df-14b2259a1f5e",
+                    "name": "Hamburguesa royal",
+                    "desc": "Carne jugosa + huevo montado + queso derretido + papas fritas",
+                    "price": 14,
+                    "badge": "🔥 Clásica Royal",
+                    "active": true,
+                    "manualOutOfStock": false,
+                    "allowsPotatoChoice": true,
+                    "isBeverage": false,
+                    "item_id": "f7619d47-bef3-46df-b3d1-630e1ca1217f",
+                    "sku": "10001"
+                },
+                {
+                    "id": "h4",
+                    "variant_id": "4e4fef97-e474-4399-bd9c-a3018cc5f08e",
+                    "name": "Hamburguesa super",
+                    "desc": "Carne + huevo + queso + jamón + porción de papas crocantes",
+                    "price": 15,
+                    "badge": "",
+                    "active": true,
+                    "manualOutOfStock": false,
+                    "allowsPotatoChoice": true,
+                    "isBeverage": false,
+                    "item_id": "15905a00-9021-4f45-8c26-bc072c265101",
+                    "sku": "10002"
+                },
+                {
+                    "id": "h5",
+                    "variant_id": "ea59f87e-7011-4a3e-a7a9-44382e4a0e4c",
+                    "name": "Hamburguesa club royal",
+                    "desc": "Carne + queso + jamón + huevo + tocino ahumado crocante + papas",
+                    "price": 16,
+                    "badge": "⭐ La Especialidad",
+                    "active": true,
+                    "manualOutOfStock": false,
+                    "allowsPotatoChoice": true,
+                    "isBeverage": false,
+                    "item_id": "d930d9ca-4572-4fb9-9873-dcbfd4652eed",
+                    "sku": "10003"
+                }
+            ]
+        },
+        {
+            "id": "pollo_deshilachado",
+            "name": "Pollo Deshilachado",
+            "icon": "🥪",
+            "active": true,
+            "items": [
+                {
+                    "id": "pd1",
+                    "variant_id": "c577b91a-a10f-4e1e-9911-a1f73b9f6c97",
+                    "name": "Pollo deshilachado clásico",
+                    "desc": "Generoso y jugoso pollo deshilachado + papas al hilo\/fritas + todas las cremas",
+                    "price": 12,
+                    "badge": "Clásico",
+                    "active": true,
+                    "manualOutOfStock": false,
+                    "allowsPotatoChoice": true,
+                    "isBeverage": false,
+                    "item_id": "6b212672-b3d6-4974-afb7-05f973bcd2df",
+                    "sku": "10004"
+                },
+                {
+                    "id": "pd2",
+                    "variant_id": "e4d1fbbf-1503-4317-94cb-acc75b1c913a",
+                    "name": "Pollo deshilachado especial",
+                    "desc": "Pollo deshilachado + jamón inglés + queso derretido + papas",
+                    "price": 13,
+                    "badge": "",
+                    "active": true,
+                    "manualOutOfStock": false,
+                    "allowsPotatoChoice": true,
+                    "isBeverage": false,
+                    "item_id": "bd6047e5-af1a-41d0-bd8a-4f512e05003d",
+                    "sku": "10005"
+                },
+                {
+                    "id": "pd3",
+                    "variant_id": "060095b1-6642-4cb1-ae5a-2d2cd7c96334",
+                    "name": "Pollo deshilachado royal",
+                    "desc": "Pollo deshilachado + huevo montado a la plancha + queso derretido + papas",
+                    "price": 14,
+                    "badge": "🔥 Recomendado",
+                    "active": true,
+                    "manualOutOfStock": false,
+                    "allowsPotatoChoice": true,
+                    "isBeverage": false,
+                    "item_id": "d20f6f49-8ded-4f42-b824-0b56b00f3310",
+                    "sku": "10006"
+                },
+                {
+                    "id": "pd4",
+                    "variant_id": "6906ccd6-cc74-4042-8601-e646c1129131",
+                    "name": "Pollo deshilachado super",
+                    "desc": "Pollo deshilachado + huevo + queso + jamón inglés + papas",
+                    "price": 15,
+                    "badge": "",
+                    "active": true,
+                    "manualOutOfStock": false,
+                    "allowsPotatoChoice": true,
+                    "isBeverage": false,
+                    "item_id": "d4d67d62-2420-42e2-b59e-07aed2dbc9a5",
+                    "sku": "10007"
+                },
+                {
+                    "id": "pd5",
+                    "variant_id": "f1f36672-bc7c-41de-9961-ddd068380e4d",
+                    "name": "Pollo deshilachado club royal",
+                    "desc": "Pollo deshilachado + queso + jamón + huevo + tocino crocante + papas",
+                    "price": 16,
+                    "badge": "⭐ Supremo",
+                    "active": true,
+                    "manualOutOfStock": false,
+                    "allowsPotatoChoice": true,
+                    "isBeverage": false,
+                    "item_id": "099f26d4-fd17-4a4d-a609-311f2861df59",
+                    "sku": "10008"
+                }
+            ]
+        },
+        {
+            "id": "filetes",
+            "name": "Filetes",
+            "icon": "🥩",
+            "active": true,
+            "items": [
+                {
+                    "id": "f1",
+                    "variant_id": "08d0e755-36f3-4253-b262-56430ea37cad",
+                    "name": "Filete clásico",
+                    "desc": "Filete jugoso a la plancha + papas fritas y\/o hilo + todas las cremas",
+                    "price": 12,
+                    "badge": "A la Plancha",
+                    "active": true,
+                    "manualOutOfStock": false,
+                    "allowsPotatoChoice": true,
+                    "isBeverage": false,
+                    "item_id": "b94a3fef-856b-47ab-a980-5fc63df047a3",
+                    "sku": "10009"
+                },
+                {
+                    "id": "f2",
+                    "variant_id": "8e2a954c-1719-4be3-99b2-f220b80f40a8",
+                    "name": "Filete especial",
+                    "desc": "Filete jugoso + jamón inglés + queso derretido + papas fritas",
+                    "price": 13,
+                    "badge": "",
+                    "active": true,
+                    "manualOutOfStock": false,
+                    "allowsPotatoChoice": true,
+                    "isBeverage": false,
+                    "item_id": "21bbd13d-052d-4872-ba5e-8804f96e563c",
+                    "sku": "10010"
+                },
+                {
+                    "id": "f3",
+                    "variant_id": "2bfa628d-bdfb-468b-aafa-ac351846b7de",
+                    "name": "Filete royal",
+                    "desc": "Filete a la plancha + huevo montado + queso derretido + papas",
+                    "price": 14,
+                    "badge": "🔥 Muy Pedido",
+                    "active": true,
+                    "manualOutOfStock": false,
+                    "allowsPotatoChoice": true,
+                    "isBeverage": false,
+                    "item_id": "e64a2703-dec2-4c19-b57a-48416104748e",
+                    "sku": "10011"
+                },
+                {
+                    "id": "f4",
+                    "variant_id": "f9fad568-98bf-4dd9-a57d-b5d3f5f86ed4",
+                    "name": "Filete super",
+                    "desc": "Filete a la plancha + huevo + queso + jamón + papas crocantes",
+                    "price": 15,
+                    "badge": "",
+                    "active": true,
+                    "manualOutOfStock": false,
+                    "allowsPotatoChoice": true,
+                    "isBeverage": false,
+                    "item_id": "09ae3fad-dc66-421d-8601-edfe2f48dd62",
+                    "sku": "10012"
+                },
+                {
+                    "id": "f5",
+                    "variant_id": "0e2ef7ed-82a0-43ad-a8d7-4e0d99ee9eea",
+                    "name": "Filete club royal",
+                    "desc": "Filete + queso + jamón + huevo + tocino ahumado crocante + papas",
+                    "price": 16,
+                    "badge": "⭐ Especialidad",
+                    "active": true,
+                    "manualOutOfStock": false,
+                    "allowsPotatoChoice": true,
+                    "isBeverage": false,
+                    "item_id": "872de49a-fc34-45a7-963f-379b001c106d",
+                    "sku": "10013"
+                }
+            ]
+        },
+        {
+            "id": "crispy",
+            "name": "Crispy",
+            "icon": "🍗",
+            "active": true,
+            "items": [
+                {
+                    "id": "cr1",
+                    "variant_id": "5262de55-d870-46c2-aad9-25a7a096d8a0",
+                    "name": "Crispy clásico",
+                    "desc": "Filete de pollo empanizado extracrocante + papas fritas y\/o hilo + cremas",
+                    "price": 13,
+                    "badge": "🔥 Clásico Crispy",
+                    "active": true,
+                    "manualOutOfStock": false,
+                    "allowsPotatoChoice": true,
+                    "isBeverage": false,
+                    "item_id": "ccccc63e-663c-47c9-a114-55d8d032a90a",
+                    "sku": "10039"
+                },
+                {
+                    "id": "cr2",
+                    "variant_id": "57bf1904-69f2-427a-8731-afe078274a6d",
+                    "name": "Crispy especial",
+                    "desc": "Filete de pollo crispy + jamón inglés + queso derretido + papas fritas",
+                    "price": 14,
+                    "badge": "",
+                    "active": true,
+                    "manualOutOfStock": false,
+                    "allowsPotatoChoice": true,
+                    "isBeverage": false,
+                    "item_id": "e137bae2-ec08-4609-86e4-7fce38a49645",
+                    "sku": "10047"
+                },
+                {
+                    "id": "cr3",
+                    "variant_id": "d94b34ba-f604-44b9-b76c-08286adaff5e",
+                    "name": "Crispy royal",
+                    "desc": "Filete de pollo crispy + huevo montado + queso derretido + papas",
+                    "price": 15,
+                    "badge": "Popular",
+                    "active": true,
+                    "manualOutOfStock": false,
+                    "allowsPotatoChoice": true,
+                    "isBeverage": false,
+                    "item_id": "be41a621-224b-4b13-a11a-a7ecd47015c7",
+                    "sku": "10048"
+                },
+                {
+                    "id": "cr4",
+                    "variant_id": "54ca71a0-bb6d-44de-b3a3-af21b46924c3",
+                    "name": "Crispy super",
+                    "desc": "Filete crispy + huevo + queso + jamón inglés + papas crocantes",
+                    "price": 16,
+                    "badge": "",
+                    "active": true,
+                    "manualOutOfStock": false,
+                    "allowsPotatoChoice": true,
+                    "isBeverage": false,
+                    "item_id": "e96c7fa1-ba54-4279-8de1-d418308c4563",
+                    "sku": "10049"
+                },
+                {
+                    "id": "cr5",
+                    "variant_id": "60bc53aa-36cd-4650-9707-c082244fbf7c",
+                    "name": "Crispy club royal",
+                    "desc": "Filete crispy + queso + jamón + huevo + tocino ahumado crocante + papas",
+                    "price": 17,
+                    "badge": "⭐ Supremo",
+                    "active": true,
+                    "manualOutOfStock": false,
+                    "allowsPotatoChoice": true,
+                    "isBeverage": false,
+                    "item_id": "f29834f6-bc3e-49a6-a2a0-65fca8a19ea5",
+                    "sku": "10050"
+                }
+            ]
+        },
+        {
+            "id": "chorizos",
+            "name": "Chorizos",
+            "icon": "🌭",
+            "active": true,
+            "items": [
+                {
+                    "id": "c1",
+                    "variant_id": "8fdde459-5909-49a4-a2c9-eacbec3efa18",
+                    "name": "Chorizo clásico",
+                    "desc": "Chorizo precocido ahumado doradito + papas fritas y\/o hilo + cremas",
+                    "price": 13,
+                    "badge": "",
+                    "active": true,
+                    "manualOutOfStock": false,
+                    "allowsPotatoChoice": true,
+                    "isBeverage": false,
+                    "item_id": "560346b1-a761-4c3a-a547-1d982cf8b5ad",
+                    "sku": "10020"
+                },
+                {
+                    "id": "c2",
+                    "variant_id": "9be1375d-d1ca-4ada-ab6d-55218b8a792d",
+                    "name": "Chorizo especial",
+                    "desc": "Chorizo precocido + jamón inglés + queso derretido + papas fritas",
+                    "price": 14,
+                    "badge": "",
+                    "active": true,
+                    "manualOutOfStock": false,
+                    "allowsPotatoChoice": true,
+                    "isBeverage": false,
+                    "item_id": "3f13e867-c3e4-49fb-88c4-f1cfa34bc07c",
+                    "sku": "10021"
+                },
+                {
+                    "id": "c3",
+                    "variant_id": "93e6270e-8acc-49f9-8c0f-3fee2faa4c70",
+                    "name": "Chorizo royal",
+                    "desc": "Chorizo precocido + huevo montado + queso derretido + papas",
+                    "price": 15,
+                    "badge": "🔥 Clásico",
+                    "active": true,
+                    "manualOutOfStock": false,
+                    "allowsPotatoChoice": true,
+                    "isBeverage": false,
+                    "item_id": "d133d9be-1a85-4a29-ae41-037a18385aac",
+                    "sku": "10022"
+                },
+                {
+                    "id": "c4",
+                    "variant_id": "c084ac1e-f45b-4c6d-8173-1527d39ca3f5",
+                    "name": "Chorizo super",
+                    "desc": "Chorizo precocido + huevo + queso + jamón inglés + papas",
+                    "price": 16,
+                    "badge": "",
+                    "active": true,
+                    "manualOutOfStock": false,
+                    "allowsPotatoChoice": true,
+                    "isBeverage": false,
+                    "item_id": "b4db10d1-298e-45e3-a0b1-dbdb719f73d8",
+                    "sku": "10023"
+                },
+                {
+                    "id": "c5",
+                    "variant_id": "6059ac60-e268-4809-9060-4253c62c24db",
+                    "name": "Chorizo club royal",
+                    "desc": "Chorizo precocido + queso + jamón + huevo + tocino ahumado + papas",
+                    "price": 17,
+                    "badge": "⭐ El Más Completo",
+                    "active": true,
+                    "manualOutOfStock": false,
+                    "allowsPotatoChoice": true,
+                    "isBeverage": false,
+                    "item_id": "56b27324-d61c-4e81-acb5-8eacbbbe2f8d",
+                    "sku": "10024"
+                }
+            ]
+        },
+        {
+            "id": "salchipapa",
+            "name": "Salchipapas",
+            "icon": "🍟",
+            "active": true,
+            "items": [
+                {
+                    "id": "s1",
+                    "variant_id": "113c5cdc-9523-4131-9107-9387f748b203",
+                    "name": "Salchipapa clásica",
+                    "desc": "Papas fritas crocantes + rodajas de hotdog de ternera doradito",
+                    "price": 14,
+                    "badge": "",
+                    "active": true,
+                    "manualOutOfStock": false,
+                    "allowsPotatoChoice": false,
+                    "isBeverage": false,
+                    "item_id": "9e4f8fa0-2e06-4af5-9af3-d24edbffef0f",
+                    "sku": "10025"
+                },
+                {
+                    "id": "s2",
+                    "variant_id": "8f657ba7-4ba7-4b6b-808a-55d07b931269",
+                    "name": "Salchipapa especial",
+                    "desc": "Papas fritas + hotdog de ternera + huevo montado a la plancha",
+                    "price": 14.5,
+                    "badge": "",
+                    "active": true,
+                    "manualOutOfStock": false,
+                    "allowsPotatoChoice": false,
+                    "isBeverage": false,
+                    "item_id": "58b72a9a-7d1f-476e-b955-f1fa67e33730",
+                    "sku": "10026"
+                },
+                {
+                    "id": "s3",
+                    "variant_id": "7dd71cc6-5106-4f5c-be97-0e669ec48d5e",
+                    "name": "Salchipapa royal",
+                    "desc": "Papas + hotdog + huevo a la plancha + queso derretido",
+                    "price": 15.5,
+                    "badge": "",
+                    "active": true,
+                    "manualOutOfStock": false,
+                    "allowsPotatoChoice": false,
+                    "isBeverage": false,
+                    "item_id": "ab071975-01de-410b-89ea-1ecfaf67874b",
+                    "sku": "10027"
+                },
+                {
+                    "id": "s4",
+                    "variant_id": "9f238682-be0f-4853-91be-2824471e0ab0",
+                    "name": "Salchipollo",
+                    "desc": "Generosa porción de papas + hotdog + jugoso pollo deshilachado",
+                    "price": 17,
+                    "badge": "🔥 Favorito",
+                    "active": true,
+                    "manualOutOfStock": false,
+                    "allowsPotatoChoice": false,
+                    "isBeverage": false,
+                    "item_id": "de54b6b6-2570-4efc-9e97-fe68194ce74b",
+                    "sku": "10028"
+                },
+                {
+                    "id": "s5",
+                    "variant_id": "1dcb00a3-0b10-4384-9c2a-df9ab86cbca1",
+                    "name": "Salchipapa super",
+                    "desc": "Papas + hotdog + huevo + queso + jamón + pollo deshilachado",
+                    "price": 20,
+                    "badge": "",
+                    "active": true,
+                    "manualOutOfStock": false,
+                    "allowsPotatoChoice": false,
+                    "isBeverage": false,
+                    "item_id": "f2b2c0a3-cb4e-49c3-8ee1-c4b06ca09d8f",
+                    "sku": "10029"
+                },
+                {
+                    "id": "s6",
+                    "variant_id": "2ce4b601-7b87-4eb3-9a66-5a6ebeb33f33",
+                    "name": "Salchi club royal",
+                    "desc": "Papas + hotdog + pollo + queso + jamón + huevo + tocino ahumado crocante",
+                    "price": 22,
+                    "badge": "⭐ La Más Contundente",
+                    "active": true,
+                    "manualOutOfStock": false,
+                    "allowsPotatoChoice": false,
+                    "isBeverage": false,
+                    "item_id": "9621b0c0-76c0-4d12-8bba-ae7bff659b71",
+                    "sku": "10030"
+                }
+            ]
+        },
+        {
+            "id": "pollo_broaster",
+            "name": "Broasters",
+            "icon": "🍗",
+            "active": true,
+            "items": [
+                {
+                    "id": "p1",
+                    "variant_id": "ef9fc0a8-c3e4-4b0f-8ad3-d15d14a5b526",
+                    "name": "Pecho broaster",
+                    "desc": "Generosa presa de pecho broaster dorada y crujiente + papas fritas + ensalada",
+                    "price": 18,
+                    "badge": "🍗 El Más Pedido",
+                    "active": true,
+                    "manualOutOfStock": false,
+                    "allowsPotatoChoice": false,
+                    "isBeverage": false,
+                    "item_id": "bf50c0e1-2c6f-4442-958a-f63c43cd9248",
+                    "sku": "10014"
+                },
+                {
+                    "id": "p2",
+                    "variant_id": "7433770a-524e-46b1-b07d-1c6f4c2a7eb1",
+                    "name": "Encuentro broaster",
+                    "desc": "Encuentro jugoso y extracrocante + papas fritas + ensalada fresca",
+                    "price": 18,
+                    "badge": "",
+                    "active": true,
+                    "manualOutOfStock": false,
+                    "allowsPotatoChoice": false,
+                    "isBeverage": false,
+                    "item_id": "d11c3f46-f00e-45d2-8b27-54d7df9a3afe",
+                    "sku": "10015"
+                },
+                {
+                    "id": "p3",
+                    "variant_id": "7ff8ac6a-2ae7-4989-8a6e-5e535ca1fcb8",
+                    "name": "Muzlo broaster",
+                    "desc": "Jugoso muzlo broaster dorado con receta de la casa + papas fritas + ensalada",
+                    "price": 15,
+                    "badge": "",
+                    "active": true,
+                    "manualOutOfStock": false,
+                    "allowsPotatoChoice": false,
+                    "isBeverage": false,
+                    "item_id": "2525382c-e803-4c18-ba9e-a5a38741a8b2",
+                    "sku": "10016"
+                },
+                {
+                    "id": "p4",
+                    "variant_id": "8056dee7-40f6-4e43-bce8-a3344060997c",
+                    "name": "Ala broaster",
+                    "desc": "Alita broaster crocante + papas fritas + ensalada fresca y cremas",
+                    "price": 12,
+                    "badge": "",
+                    "active": true,
+                    "manualOutOfStock": false,
+                    "allowsPotatoChoice": false,
+                    "isBeverage": false,
+                    "item_id": "2ea7ad03-d4a4-4e32-b523-0a53dafdbb76",
+                    "sku": "10017"
+                },
+                {
+                    "id": "p5",
+                    "variant_id": "10a16c08-3a93-44af-aeb6-a993c4400d50",
+                    "name": "Deditos broaster",
+                    "desc": "Crujientes y suaves tiras de pechuga broaster empanizadas + papas fritas + ensalada y cremas",
+                    "price": 20,
+                    "badge": "🔥 Para Compartir",
+                    "active": true,
+                    "manualOutOfStock": false,
+                    "allowsPotatoChoice": false,
+                    "isBeverage": false,
+                    "item_id": "6cead790-8ed3-4bf8-927d-f34ff503e3e4",
+                    "sku": "10019"
+                }
+            ]
+        },
+        {
+            "id": "promociones",
+            "name": "Promociones",
+            "icon": "🔥",
+            "active": true,
+            "items": [
+                {
+                    "id": "prom1",
+                    "variant_id": "df1e6c91-9f19-4dbd-a065-b4b021fc4843",
+                    "name": "2 Alas Broaster",
+                    "desc": "2 alas broaster en plato crocante con papas y ensalada",
+                    "price": 18,
+                    "badge": "Promo",
+                    "active": true,
+                    "manualOutOfStock": false,
+                    "allowsPotatoChoice": false,
+                    "isBeverage": false,
+                    "item_id": "c9956e41-b9c2-493a-88e6-85ac2df6290c",
+                    "sku": "10018"
+                }
+            ]
+        },
+        {
+            "id": "extras_porciones",
+            "name": "Gaseosas y Extras",
+            "icon": "🥤",
+            "active": true,
+            "items": [
+                {
+                    "id": "ex9",
+                    "variant_id": "79e76f6e-a502-43c0-85a0-a2de773691f3",
+                    "name": "Inca Kola 500ml",
+                    "desc": "Gaseosa Inca Kola de medio litro bien helada",
+                    "price": 4,
+                    "badge": "🥤 Helada",
+                    "active": true,
+                    "manualOutOfStock": false,
+                    "allowsPotatoChoice": false,
+                    "isBeverage": true,
+                    "item_id": "648dc082-bc8e-4e8e-9465-7a79ab7011f2",
+                    "sku": "10046"
+                },
+                {
+                    "id": "ex10",
+                    "variant_id": "cf052d29-a589-4a5f-8118-c0816e01477e",
+                    "name": "Coca Cola 500ml",
+                    "desc": "Gaseosa Coca Cola de medio litro bien helada",
+                    "price": 4,
+                    "badge": "🥤 Helada",
+                    "active": true,
+                    "manualOutOfStock": false,
+                    "allowsPotatoChoice": false,
+                    "isBeverage": true,
+                    "item_id": "f96fb6bd-7e5b-430c-969b-01e0c6cbe4db",
+                    "sku": "10051"
+                },
+                {
+                    "id": "ex1",
+                    "variant_id": "dda9fa95-7d68-4951-babe-914be4f9ef3a",
+                    "name": "Porción de papas",
+                    "desc": "Porción extra de papas fritas doradas y crocantes al punto",
+                    "price": 8,
+                    "badge": "Porción",
+                    "active": true,
+                    "manualOutOfStock": false,
+                    "allowsPotatoChoice": false,
+                    "isBeverage": false,
+                    "item_id": "929590c3-68f7-4bf5-b277-b0d001699d44",
+                    "sku": "10031"
+                },
+                {
+                    "id": "ex2",
+                    "variant_id": "110e8dc7-88b9-4ed2-a79e-9964e8b5087d",
+                    "name": "Adicional de hotdog",
+                    "desc": "Porción adicional de hotdog doradito a la plancha",
+                    "price": 7,
+                    "badge": "",
+                    "active": true,
+                    "manualOutOfStock": false,
+                    "allowsPotatoChoice": false,
+                    "isBeverage": false,
+                    "item_id": "04de048f-dd6b-4007-98c8-c8b6f00c3779",
+                    "sku": "10037"
+                },
+                {
+                    "id": "ex3",
+                    "variant_id": "2177ce33-0135-45b7-9a43-60167b803e1f",
+                    "name": "Adicional de ala broaster",
+                    "desc": "Alita broaster dorada y crocante adicional",
+                    "price": 7,
+                    "badge": "",
+                    "active": true,
+                    "manualOutOfStock": false,
+                    "allowsPotatoChoice": false,
+                    "isBeverage": false,
+                    "item_id": "df2ddfdd-dae0-480c-bcab-cdeeb8000cdf",
+                    "sku": "10045"
+                },
+                {
+                    "id": "ex4",
+                    "variant_id": "47fd3400-d49d-49fa-9f9b-b749a89414bd",
+                    "name": "Adicional de pecho broaster",
+                    "desc": "Presa extra de pecho broaster jugosa y crujiente",
+                    "price": 10,
+                    "badge": "",
+                    "active": true,
+                    "manualOutOfStock": false,
+                    "allowsPotatoChoice": false,
+                    "isBeverage": false,
+                    "item_id": "998675f3-2dfd-433d-931c-e2f41cea658f",
+                    "sku": "10032"
+                },
+                {
+                    "id": "ex5",
+                    "variant_id": "8d4008bc-a051-420f-bf69-d46e33878809",
+                    "name": "Adicional de encuentro broaster",
+                    "desc": "Presa extra de encuentro broaster bien dorada",
+                    "price": 10,
+                    "badge": "",
+                    "active": true,
+                    "manualOutOfStock": false,
+                    "allowsPotatoChoice": false,
+                    "isBeverage": false,
+                    "item_id": "ea88986e-ef6b-45d6-8eb5-287cd78602d3",
+                    "sku": "10052"
+                },
+                {
+                    "id": "ex6",
+                    "variant_id": "139e2101-3055-4fb7-9413-b33432f8e55f",
+                    "name": "Adicional de muzlo broaster",
+                    "desc": "Presa extra de muzlo broaster bien dorada",
+                    "price": 8,
+                    "badge": "",
+                    "active": true,
+                    "manualOutOfStock": false,
+                    "allowsPotatoChoice": false,
+                    "isBeverage": false,
+                    "item_id": "50655989-bc69-49d0-a557-f4dab49a7c00",
+                    "sku": "10053"
+                },
+                {
+                    "id": "ex7",
+                    "variant_id": "b34af2ce-02d8-426a-ab23-44a9c4b1f845",
+                    "name": "Adicional de carne",
+                    "desc": "Carne artesanal para hamburguesa a la plancha adicional",
+                    "price": 7,
+                    "badge": "",
+                    "active": true,
+                    "manualOutOfStock": false,
+                    "allowsPotatoChoice": false,
+                    "isBeverage": false,
+                    "item_id": "923e2fd3-48fd-4202-9e65-524c495200e7",
+                    "sku": "10040"
+                },
+                {
+                    "id": "ex8",
+                    "variant_id": "bc323c7e-358a-4853-855b-9e2f2beb1618",
+                    "name": "Adicional de chorizo",
+                    "desc": "Chorizo precocido a la plancha adicional",
+                    "price": 7,
+                    "badge": "",
+                    "active": true,
+                    "manualOutOfStock": false,
+                    "allowsPotatoChoice": false,
+                    "isBeverage": false,
+                    "item_id": "92f7084d-71bc-4ea1-a4bc-301701c2989c",
+                    "sku": "10054"
+                },
+                {
+                    "id": "ex11",
+                    "variant_id": "c526cfb0-c85d-466a-aa62-8b9ee2629d69",
+                    "name": "Adicional de pollo",
+                    "desc": "Generosa porción de pollo deshilachado jugoso adicional",
+                    "price": 7,
+                    "badge": "",
+                    "active": true,
+                    "manualOutOfStock": false,
+                    "allowsPotatoChoice": false,
+                    "isBeverage": false,
+                    "item_id": "7740bccd-13af-4474-bc45-e20de18c0e27",
+                    "sku": "10055"
+                }
+            ]
+        }
+    ]
+}
